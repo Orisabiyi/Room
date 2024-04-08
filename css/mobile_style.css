@@ -1,0 +1,121 @@
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 31.25%;
+  }
+
+  body {
+    font-size: 2.5rem;
+  }
+
+  .header {
+    width: 100vw;
+    height: 110vh;
+    min-height: 70rem;
+    flex-direction: column;
+  }
+
+  .header__content {
+    width: 100%;
+  }
+
+  .header__content--1 {
+    flex: 0 0 60%;
+  }
+
+  .header__content--2 {
+    flex: 1;
+  }
+
+  .header__content-item--2 {
+    padding: 8rem;
+  }
+
+  .nav {
+    top: 0;
+    padding: 4rem;
+    justify-content: center;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    color: var(--color-primary-1);
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    left: 5%;
+    z-index: 1;
+  }
+
+  .menu svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: var(--neutral--primary);
+  }
+
+  .fill-gray {
+    fill: var(--color-primary-3);
+  }
+
+  .nav__logo {
+    width: 20%;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .nav__list-display {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: var(--neutral--primary);
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about__img {
+    width: 100%;
+  }
+
+  .about__content {
+    width: 100%;
+    padding: 8rem;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .btn--1 {
+    right: 0;
+    bottom: 40%;
+  }
+
+  .btn__slide {
+    padding: 2rem;
+  }
+
+  .heading-1 {
+    font-size: 4.5rem;
+  }
+
+  .heading-2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .paragraph {
+    font-size: 2.5rem;
+  }
+}

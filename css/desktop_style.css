@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --neutral--primary: hsl(0, 0%, 100%);
+  --color-primary-1: hsl(0, 0%, 0%);
+  --color-primary-2: hsl(0, 0%, 27%);
+  --color-primary-3: hsl(0, 0%, 63%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--color-primary-3);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  min-height: 50rem;
+  height: 80vh;
+}
+
+.header__content {
+  position: relative;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.header__content--1 {
+  width: 60%;
+}
+
+.header__content--2 {
+  width: 40%;
+}
+
+.header__content-item {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+}
+
+.header__content-item--2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 0 6rem;
+  background: var(--neutral--primary);
+}
+
+.header__content-item--1:nth-of-type(1),
+.header__content-item--2:nth-of-type(1) {
+  z-index: 1;
+}
+
+.header__content-item--1 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  padding: 0 2rem;
+  top: 10%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6rem;
+  z-index: 1;
+}
+
+.menu {
+  display: none;
+}
+
+.nav__logo {
+  width: 8rem;
+  height: auto;
+}
+
+.nav__logo-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--neutral--primary);
+}
+
+/* SECTION */
+.about {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.about__img {
+  flex: 1;
+}
+
+.about__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__content {
+  flex: 0 0 auto;
+  width: 45%;
+  padding: 0 4rem;
+}
+
+
+/* TYPOGRAPHY */
+.heading-1 {
+  font-size: 4rem;
+  color: var(--color-primary-1);
+}
+
+.heading-1 span {
+  display: block;
+  line-height: 1;
+}
+
+.heading-2 {
+  font-size: 1.9rem;
+  color: var(--color-primary-1);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: .5rem;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+
+/* COMPONENT */
+.btn {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  cursor: pointer;
+}
+
+.btn__link:link,
+.btn__link:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color-primary-1);
+}
+
+.btn__arrow {
+  display: inline-block;
+}
+
+.btn--1 {
+  display: flex;
+  z-index: 1;
+
+  position: absolute;
+  bottom: 0;
+  left: 60%;
+}
+
+.btn__slide {
+  background-color: var(--color-primary-1);
+  flex: 1;
+  padding: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__slide:hover {
+  background-color: var(--color-primary-2);
+  transition: all 1s;
+}
+
+.btn__slide:hover img {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+.hidden {
+  display: none;
+}
